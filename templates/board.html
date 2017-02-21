@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tic tac toe</title>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src='/static/game.js'></script>
+      <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <div class='game_container'>
+      <h1>tic tac toe</h1>
+      <div class='game_board'>
+        <table>
+          <tr>
+          {% for slot in game_board: %}
+            <td class='game_slot' data-id='{{loop.index-1}}'>{{slot.marker}}</td>
+            {% if loop.index % 3 == 0 %}
+          </tr>
+          <tr>
+            {% endif %}
+          {% endfor %}
+          </tr>
+        </table>
+      </div>
+      <div class='results hide'>
+        <a href='/' class='button'>play again</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.game_container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 56pt;
+  font-weight: 200;
+}
+
+.game_board {
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+td {
+  height: 120px;
+  width: 120px;
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+  text-align: center;
+  font-size: 54pt;
+  /*font-weight: bold;*/
+  color: teal;
+  overflow: hidden;
+}
+
+table tr:first-child td {
+  border-top: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+td:first-child {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+}
+
+/*.results {
+  margin: 0 auto;
+}*/
+
+.button {
+  display: block;
+  width: 110px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: #00b9bc;
+  margin-top: 20px;
+  border: 2px black;
+  border-radius: 4px;
+  font-size: 18pt;
+  box-shadow: 2px 2px gray; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.winning {
+  color: purple;
+}
+
+.tie {
+  color: gray;
+}
