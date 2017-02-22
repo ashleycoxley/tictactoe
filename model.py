@@ -5,7 +5,7 @@ class Slot:
         self.winning = False
 
     def __repr__(self):
-        info = str(self.idx) + ': ' + self.marker + ' Winning: ' + str(self.winning)
+        info = str(self.idx) + ': ' + self.marker
         return info
 
 

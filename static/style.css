@@ -28,7 +28,6 @@ td {
   border-right: 2px solid gray;
   text-align: center;
   font-size: 54pt;
-  /*font-weight: bold;*/
   color: teal;
   overflow: hidden;
 }
@@ -48,10 +47,6 @@ td:first-child {
 td:last-child {
   border-right: none;
 }
-
-/*.results {
-  margin: 0 auto;
-}*/
 
 .button {
   display: block;
